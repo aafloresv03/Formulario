@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Curso Web</title>
+    
+
 </head>
 <body>
     <form action="./procesar.txt" method="get" name="Formulario">
@@ -65,32 +67,38 @@
 			<input type="checkbox" name="Tema1" value="B3T8"> B3T8 <br>
 			<input type="checkbox" name="Tema1" value="B3T4" checked> B3T4 <br>
 
-        <label for="tema2"></label>
-        <select id="tema2" name="tema2">
-            <option selected> Seleccione un tema</option>
-                <optgroup label="Bloque 1">
-                <option>B1T1</option>
-                <option>B1T2</option>
-                <option>B1T3</option>
-                </optgroup>
-                <optgroup label="Bloque 2">
-                <option>B2T1</option>
-                <option>B2T2</option>
-                <option>B2T3</option>
-                </optgroup>
-                <optgroup label="Bloque 3">
-                <option>B3T1</option>
-                <option>B3T2</option>
-                <option>B3T3</option>
-                </optgroup>
-        </select><br>
+            <label for="tema2"></label>
+            <select id="tema2" name="tema2">
+                <option selected> Seleccione un tema</option>
+                    <optgroup label="Bloque 1">
+                    <option>B1T1</option>
+                    <option>B1T2</option>
+                    <option>B1T3</option>
+                    </optgroup>
+                    <optgroup label="Bloque 2">
+                    <option>B2T1</option>
+                    <option>B2T2</option>
+                    <option>B2T3</option>
+                    </optgroup>
+                    <optgroup label="Bloque 3">
+                    <option>B3T1</option>
+                    <option>B3T2</option>
+                    <option>B3T3</option>
+                    </optgroup>
+            </select><br>
         
-        <label for="Observaciones"> Observaciones: </label> <br>
-		<textarea id="Observaciones" name="Observaciones" cols="20" rows="30" ></textarea> <br>
+            <div id="obs"></div>
+        
         
         <input type="submit" value="Enviar"></imput>
-        <imput type="submit" vallue="Limpiar"></imput>
+        <input type="submit" vallue="Limpiar"></imput>
     </form>
-    
+    <script type="text/javascript" >
+        document.getElementById("obs");
+        obs.innerHTML = `
+        <label for="Observaciones"> Observaciones: </label> <br>
+		<textarea id="Observaciones" name="Observaciones" cols="20" rows="30" ></textarea> <br>
+                `;
+    </script>
 </body>
 </html>
